@@ -9,14 +9,14 @@ Based on Naive Beyes algorithm.
 ![image](https://user-images.githubusercontent.com/44899736/147671658-a5d4949a-0fd6-4e89-bba1-315eb9f101ae.png)
 - 第一列为飞机起飞的日期为周几，第二列为起飞的时间，第三列为起飞延迟的时间。若起飞延迟时间为0，则为未延误，若起飞延迟时间为正数，则为延误。
 - 通过代码，对第三列起飞延误时间进行布尔转换打标签。
-"""
+"
   if(theClassification.toInt>0){
     label="1"
   }
   else{
     label="0"
   }
-"""
+"
 
 # 步骤二 上传文件
 hadoop fs -put train.csv .
